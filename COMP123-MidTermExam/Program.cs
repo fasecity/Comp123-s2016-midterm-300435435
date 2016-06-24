@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Name Mohamoud Mohamed
+//student number 300435435
+//midterm test
+//v.03
 namespace COMP123_MidTermExam
 {
     /**
