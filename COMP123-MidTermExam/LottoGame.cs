@@ -133,6 +133,13 @@ namespace COMP123_MidTermExam
                 ElementList.Clear();
                 NumberList.Clear();
             }
+            _build();
+
+
+            int randomNumber = random.Next(1,SetSize+1);
+
+
+         
         }
 
         // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
