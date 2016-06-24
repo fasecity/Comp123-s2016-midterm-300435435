@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 //Name Mohamoud Mohamed
 //student number 300435435
 //midterm test
-//v.03
+//v.04 interfaces
 namespace COMP123_MidTermExam
 {
     /**
