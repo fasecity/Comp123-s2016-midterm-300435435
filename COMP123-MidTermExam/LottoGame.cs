@@ -154,6 +154,13 @@ namespace COMP123_MidTermExam
            NumberList.RemoveAt(randomNumber);
            int L = randomNumber + ElementList.Count;
 
+           for (int i = 0; i < ElementNumber; i++)
+           {
+                   randomNumber = random.Next(1,SetSize+1);
+           NumberList.RemoveAt(randomNumber);
+           int l = randomNumber + ElementList.Count;
+           }
+
 
 
          
