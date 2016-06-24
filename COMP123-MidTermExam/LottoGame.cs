@@ -78,11 +78,9 @@ namespace COMP123_MidTermExam
 
         // PRIVATE METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-        // CREATE the private _initialize method here -----------------------------
 
-        // CREATE the private _build method here -----------------------------------
 
-        // OVERRIDEN METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+       
 
         /**
          * <summary>
@@ -94,6 +92,8 @@ namespace COMP123_MidTermExam
          * @method ToString
          * @returns {string}
          */
+        
+        // OVERRIDEN METHODS +++++++++++++++++++++++++
         public override string ToString()
         {
             // create a string variable named lottoNumberString and intialize it with the empty string
@@ -108,7 +108,10 @@ namespace COMP123_MidTermExam
 
             return lottoNumberString;
         }
-        
+        /// <summary>
+        /// Private build method 
+        /// @ return void
+        /// </summary>
         private void _build()
         {
             for (int i = 1; i < SetSize+1; i++)
@@ -116,14 +119,25 @@ namespace COMP123_MidTermExam
                 NumberList.Add(i);
             }
         }
+        // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+        
+        /// <summary>
+        /// Public initialize method initializes lists and random
+        /// @retun void
+        /// </summary>
         public void _initialize()
         {
             _numbersList = new List<int>();
             _elementList = new List<int>();
             _random = new Random();
         }
-
+        /// <summary>
+        /// Pickelement public Method 
+        /// @ retun void
+        /// </summary>
+       
+        
         public void PickElements()
         {
          
@@ -137,12 +151,14 @@ namespace COMP123_MidTermExam
 
 
             int randomNumber = random.Next(1,SetSize+1);
+           NumberList.RemoveAt(randomNumber);
+           int L = randomNumber + ElementList.Count;
+
 
 
          
         }
 
-        // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         // CREATE the public PickElements method here ----------------------------
     }
