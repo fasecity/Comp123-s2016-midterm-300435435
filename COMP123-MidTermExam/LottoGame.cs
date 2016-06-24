@@ -19,10 +19,10 @@ namespace COMP123_MidTermExam
     {
         
         // PRIVATE INSTANCE VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        private List<int> _elementList = new List<int>();
+        private List<int> _elementList;
         private int _elementNumber;
         private List<int> _numbersList;
-        private Random _random = new Random();
+        private Random _random;
         private int _setSize;
         // CREATE private fields here --------------------------------------------
 
@@ -34,7 +34,7 @@ namespace COMP123_MidTermExam
         public int ElementNumber { get { return this._elementNumber; } set { this._elementNumber = value; ;} }
         public List<int> NumberList { get{return this._numbersList;} set{ this._numbersList=value;} }
         public Random random { get {return this._random ;} }
-        public int SetSize { get { return this._setSize; } set {this._setSize = value } }
+        public int SetSize { get { return this._setSize; } set { this._setSize = value; } }
         // CREATE public properties here -----------------------------------------
 
         // CONSTRUCTORS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -111,7 +111,10 @@ namespace COMP123_MidTermExam
         
         private void _build()
         {
-            throw new System.NotImplementedException();
+            for (int i = 1; i < SetSize+1; i++)
+            {
+                NumberList.Add(i);
+            }
         }
 
         public void _initialize()
@@ -123,7 +126,13 @@ namespace COMP123_MidTermExam
 
         public void PickElements()
         {
-            throw new System.NotImplementedException();
+         
+            
+            if (this.ElementList.Count > 0)
+            {
+                ElementList.Clear();
+                NumberList.Clear();
+            }
         }
 
         // PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
