@@ -161,6 +161,7 @@ namespace COMP123_MidTermExam
            int l = randomNumber + ElementList.Count;
            }
 
+           ElementList.Sort();
 
 
          
