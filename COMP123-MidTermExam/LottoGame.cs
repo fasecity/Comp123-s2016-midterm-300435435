@@ -133,7 +133,7 @@ namespace COMP123_MidTermExam
             _random = new Random();
         }
         /// <summary>
-        /// Pickelement public Method 
+        /// Pickelement public GenerateLottoNumbers 
         /// @ retun void
         /// </summary>
        
